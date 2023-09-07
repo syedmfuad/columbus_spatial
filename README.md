@@ -2,7 +2,7 @@
 Started with the goal of developing an undergrad geoinformatics/spatial data science summer course and ended up as a reference repository for spatial mapping and raster data manipulation and processing. 
 
 ## treecover.R 
-Merging household-level demographics with neighborhood amenity raster files (heterogenous grid cell resolutions), for e.g., tree canopy, land use, open space, distance to nearest water body, etc. 
+Merging household-level demographics with neighborhood amenity raster files (heterogenous grid-cell resolutions), for e.g., tree canopy, land use, open space, distance to nearest water body, etc. 
 
 ## map.R 
 Trying out different mappings with using Google API 
