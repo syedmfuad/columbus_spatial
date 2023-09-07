@@ -18,7 +18,7 @@ data <- read.csv("columbus_update.csv")
 data$price <- ifelse(data$tranamt>=1000000, 1000000, data$tranamt)
 
 #API
-ggmap::register_google(key = "AIzaSyA-UiMPuDvL_CFU34lyIDtow_B020R_sh8")
+ggmap::register_google(key = "########################")
 
 #getting Atlanta map
 
