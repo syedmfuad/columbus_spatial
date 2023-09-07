@@ -44,18 +44,6 @@ k1 <- knn2nb(knearneigh(coor, k=1))
 k1dists <- unlist(nbdists(k1, coor, longlat=TRUE))
 summary(k1dists) #tells you summary stats for the distance among houses
 
-#cross checking
-
-1
-39.97604	-82.916504
-0.6977135 -1.447166
-10517
-39.976151	-82.916496
-0.6977155 -1.447166
-10441
-39.975422	-82.916557
-0.6977027 -1.447167
-
 deg2rad <- function(deg) return(deg*pi/180)
 
 gcd.hf <- function(long1, lat1, long2, lat2) {
