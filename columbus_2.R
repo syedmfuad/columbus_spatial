@@ -6,15 +6,11 @@ library(mvtnorm)
 
 data <- read.csv("columbus.csv")
 
-#data <- data[!(data$price_000s==87.06),]
-
 set.seed(5)
 
 data <- sample_n(data, 500)
 
 data <- data[complete.cases(data), ]
-
-#path <- "C:/Users/Syed Fuad/Desktop/Spatial/Shiroya/"
 
 Y <- I(data$price_000s)
 
@@ -257,6 +253,7 @@ bse=cbind(bse1,bse2);
 #gamma=cbind(g[1:gvs],g[(gvs+1):(2*gvs)]);
 #gse=cbind(gse1)
 
+# MAPPING 
 
 data_new <- cbind(data, Ds)
 data_new$prob <- ifelse(data_new$`1`>data_new$`2`, "sub1", "sub2")
