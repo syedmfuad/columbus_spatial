@@ -6,15 +6,11 @@ library(mvtnorm)
 
 data <- read.csv("columbus.csv")
 
-data <- data[!(data$price_000s==87.06),]
-
 set.seed(5)
 
 data <- sample_n(data, 500)
 
 data <- data[complete.cases(data), ]
-
-#path <- "C:/Users/Syed Fuad/Desktop/Spatial/Shiroya/"
 
 Y <- I(data$price_000s)
 
