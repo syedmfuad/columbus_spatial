@@ -5,13 +5,13 @@ Started with the goal of developing an undergrad geoinformatics/spatial data sci
 Fully Endogenized Finite Mixture Modeling with Columbus housing data for two submarkets + mapping of submarkets 
 
 ## columbus_3.R 
-Fully Endogenized Finite Mixture Modeling with Columbus housing data for three submarkets 
+Fully Endogenized Finite Mixture Modeling with Columbus housing data for three submarkets in Columbus, OH 
 
 ## columbus_4.R 
-Fully Endogenized Finite Mixture Modeling with Columbus housing data for four submarkets
+Fully Endogenized Finite Mixture Modeling with Columbus housing data for four submarkets in Columbus, OH 
 
 ## map.R 
-Trying out different mapping with households using Google API 
+Trying out different mappings with using Google API 
 
 ## soil quality.R 
 Trying out different raster files of soil quality, precipitation, temperature, agricultural production, yield, harvested area. 
