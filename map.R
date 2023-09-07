@@ -20,9 +20,7 @@ data$price <- ifelse(data$tranamt>=1000000, 1000000, data$tranamt)
 #API
 ggmap::register_google(key = "########################")
 
-#getting Atlanta map
-
-#get_local_spot <-  get_map("Atlanta Georgia", maptype = "roadmap",
+#Atlanta map
 
 #mylocation <- c(-83.25, 39.8, -82.75, 40.2)
 mymap <- get_map(location="columbus ohio", source="stamen", maptype="terrain-background", crop=FALSE)
@@ -46,7 +44,7 @@ mtplot = map1 +
   labs(x = "Longitude", y="Latitude", colour="Price")
 mtplot
 
-#not good
+#not good 
 plot_gg(mtplot, multicore = TRUE, windowsize = c(1400,866), sunangle=225,
         zoom = 0.60, phi = 30, theta = 45)
 render_snapshot(clear = TRUE)
@@ -120,8 +118,6 @@ plot_gg(map1_rd, multicore = TRUE, width=8, height=8, scale=300, #windowsize = c
 render_snapshot(clear = TRUE)
 
 
-
-
 theme_set(theme_bw(16))
 get_local_spot_bw <- qmap("Columbus Ohio", zoom = 10, legend = "topleft") 
 
@@ -135,7 +131,7 @@ get_local_spot_bw +
 
 #mapping by middle school
 
-#here, ms_submarket denotes the submarket classification
+#ms_submarket denotes the submarket classification
 
 map1 +
   geom_point(data = data, aes(x = hlong, y = hlat, colour = as.factor(freq2)), size = 1, alpha=0.25) +
