@@ -1,4 +1,4 @@
-# columbus_spatial 
+# spatial_miscellaneous
 Started with the goal of developing an undergrad geoinformatics/spatial data science summer course and ended up as a reference repository for spatial mapping and raster data manipulation and processing. 
 
 ## columbus_2.R 
