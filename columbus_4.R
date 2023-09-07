@@ -8,8 +8,6 @@ library(mvtnorm)
 
 data <- read.csv("columbus.csv")
 
-data <- data[!(data$price_000s==87.06),]
-
 set.seed(5)
 
 data <- sample_n(data, 500)
